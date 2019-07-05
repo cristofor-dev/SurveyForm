@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Title</h1>
+    <p id="description">Short Description</p>
+    <form id="survey-form">
+        <ul>
+        <li><label id="name-label">
+                <input type="text" id="name" placeholder="Enter your name">
+            </label>
+        </li>    
+        <li><label id="email-label">
+                <input type="email" id="email" placeholder="Enter your email">
+            </label>
+        </li>
+        <li><label id="number-label">
+                <input type="number" id="number" min="14" max="70" placeholder="Your age (older than 14)">
+            </label>
+        </li>
+        </ul>
+        <select id="dropdown" name="status">
+            <option value="Unmaried">Unmaried</option>
+            <option value="Married without children">Married without children</option>
+            <option value="Married with children">Married with children</option>
+            <option value="Foster Parent">Foster Parent</option>
+            <option value="Divorced">Divorced</option>
+        </select>
+        <label>
+            <ul>
+                <li><input type="radio" name="frequency" value="Every day">Every day</li>
+                <li><input type="radio" name="frequency" value="Weekly">Weekly</li>
+                <li><input type="radio" name="frequency" value="Monthly">Monthly</li>
+                <li><input type="radio" name="frequency" value="Almost never">Almost never</li>
+            </ul>
+        </label>
+        <label>
+            <ul>
+                <li><input type="checkbox" name="topic1" value="God's plan">God's plan for the marriage</li>
+                <li><input type="checkbox" name="topic2" value="Marriage preparation">How to prepare for the marriage
+                </li>
+                <li><input type="checkbox" name="topic3" value="Communication improvement">How to communicate better
+                </li>
+                <li><input type="checkbox" name="topic4" value="Happy Marriage">Ingredients for a happy Marriage</li>
+                <li><input type="checkbox" name="topic5" value="Conflict Management">How to manage conflicts in marriage
+                </li>
+                <li><input type="checkbox" name="topic6" value="Raising Kids">How to raise your kids</li>
+                <li><input type="checkbox" name="topic7" value="Adolescents">How to deal with the adolescents</li>
+            </ul>
+
+        </label>
+        <textarea name="" id="textarea" cols="20" rows="5">Are you interested in other marriage topics? Add your suggestions here.
+        </textarea>
+        <input type="submit" id="submit">
+    </form>
+</body>
+
+</html>
